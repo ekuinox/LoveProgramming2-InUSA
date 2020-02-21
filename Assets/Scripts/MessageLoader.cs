@@ -5,7 +5,7 @@ using Assets.Scripts;
 
 public static class MessageLoader
 {
-    static List<Message> GetFromJson(string json)
+    public static List<Message> GetFromJson(string json)
     {
         var messages = JsonUtility.FromJson<Message[]>(json);
 
@@ -19,7 +19,7 @@ public static class MessageLoader
         return messageList;
     }
 
-    static List<Message> GetFromFile(string filePath)
+    public static List<Message> GetFromFile(string filePath)
     {
         try
         {

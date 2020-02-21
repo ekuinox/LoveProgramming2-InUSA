@@ -3,7 +3,7 @@
 namespace Assets.Scripts
 {
     [Serializable]
-    struct Message
+    public struct Message
     {
         [Serializable]
         public enum Type
