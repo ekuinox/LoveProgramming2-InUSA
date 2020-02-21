@@ -23,11 +23,33 @@ public class MessageText : MonoBehaviour
         }
     }
 
+    [SerializeField] private SelectionCursor cursor;
+
     void Start()
     {
         LoadJson();
         var textComponent = gameObject.GetComponent<Text>();
+        textComponent.text = "";
+        switch (message.type)
+        {
+            // 選択肢つき
+            case 1:
+                {
+                }
+                break;
+            default:
+                {
+                    textComponent.text = message.text;
+                }
+                break;
+        }
         textComponent.text = message.text;
+        // 選択肢のあるやつ
+        if (message.type == 1)
+        {
+            var selections = message.selections.Keys;
+            selections.
+        }
     }
 
     void Update()
