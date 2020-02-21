@@ -1,0 +1,8 @@
+{
+	"decreaseLove": {
+		"type": "decreaseLove",
+		"args": {
+			"count": 1
+		}
+	}
+}
