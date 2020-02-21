@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.IO;
 using UnityEngine;
@@ -7,8 +7,8 @@ public static class EventLoader
 {
     public struct EventData
     {
-        int type; // イベントのタイプ
-        Dictionary<string, string> args; // イベントに与える引数
+        public int type; // イベントのタイプ
+        public Dictionary<string, string> args; // イベントに与える引数
     }
 
     static Dictionary<string, EventData> eventDataDict;
