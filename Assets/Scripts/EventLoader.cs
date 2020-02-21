@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.IO;
 using UnityEngine;
@@ -8,7 +8,7 @@ public static class EventLoader
 {
     public struct EventData
     {
-        public int type; // イベントのタイプ
+        public string type; // イベントのタイプ
         public Dictionary<string, string> args; // イベントに与える引数
     }
 
@@ -44,7 +44,7 @@ public static class EventLoader
 
     }
 
-    public static Type GetType(int type)
+    public static Type GetType(string type)
     {
         return typeof(LoveEvent);
     }
