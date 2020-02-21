@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.IO;
 using UnityEngine;
@@ -46,6 +46,11 @@ public static class EventLoader
 
     public static Type GetType(string type)
     {
+        switch (type)
+        {
+            case "decreaseLove":
+                return typeof(DecreaseLoveEvent);
+        }
         return typeof(LoveEvent);
     }
 
