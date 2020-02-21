@@ -2,13 +2,14 @@
 using Newtonsoft.Json;
 using System.IO;
 using UnityEngine;
+using System;
 
 public static class EventLoader
 {
     public struct EventData
     {
-        int type; // イベントのタイプ
-        Dictionary<string, string> args; // イベントに与える引数
+        public string type; // イベントのタイプ
+        public Dictionary<string, string> args; // イベントに与える引数
     }
 
     static Dictionary<string, EventData> eventDataDict;
@@ -41,5 +42,24 @@ public static class EventLoader
         Debug.Log("[EventLoader#GetById] Not found id");
         return new EventData();
 
+    }
+
+    public static Type GetType(string type)
+    {
+        switch (type)
+        {
+            case "decreaseLove":
+                return typeof(DecreaseLoveEvent);
+        }
+        return typeof(LoveEvent);
+    }
+
+    public static LoveEvent SpawnEventById(string id)
+    {
+        var eventData = GetById(id);
+        var type = GetType(eventData.type);
+        var loveEvent = Activator.CreateInstance(type) as LoveEvent;
+        loveEvent.init(eventData.args);
+        return loveEvent;
     }
 }
