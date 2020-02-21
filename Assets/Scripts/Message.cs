@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 [Serializable]
 public struct Message
@@ -7,5 +8,5 @@ public struct Message
     public int nextId;
     public int type;
     public string text; // if Type::Normal
-    public string[] selections; // if Type::Selection
+    public Dictionary<string, string> selections; // if Type::Selection selection: eventId
 }
