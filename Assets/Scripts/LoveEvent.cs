@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 public interface LoveEvent
 {
-    public void init(Dictionary<string, string> args);
-    public void run();
+    void init(Dictionary<string, string> args);
+    void run();
 }
