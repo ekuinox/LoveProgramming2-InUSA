@@ -1,0 +1,24 @@
+[
+	{
+		"id": 0,
+		"type": 0,
+		"text": "こんにちは～",
+		"selection": []
+	},
+	{
+		"type": 1,
+		"text": "",
+		"selection": {
+			"foo": "decreaseLove",
+			"bar": null,
+			"baz": null
+		},
+		"nextId": 1,
+
+	},
+	{
+		"type": 0,
+		"text": "あこんにちは～",
+		"selection": []
+	}
+]
