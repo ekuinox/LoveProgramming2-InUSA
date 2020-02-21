@@ -1,7 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.IO;
 using UnityEngine;
+using System;
 
 public static class EventLoader
 {
@@ -41,5 +42,19 @@ public static class EventLoader
         Debug.Log("[EventLoader#GetById] Not found id");
         return new EventData();
 
+    }
+
+    public static Type GetType(int type)
+    {
+        return typeof(LoveEvent);
+    }
+
+    public static LoveEvent SpawnEventById(string id)
+    {
+        var eventData = GetById(id);
+        var type = GetType(eventData.type);
+        var loveEvent = Activator.CreateInstance(type) as LoveEvent;
+        loveEvent.init(eventData.args);
+        return loveEvent;
     }
 }
