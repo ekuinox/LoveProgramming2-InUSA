@@ -42,10 +42,12 @@ public class MessageText : MonoBehaviour
                 textComponent.text += $"{text}\n";
             }
             cursor.setSelections(message);
+            cursor.gameObject.SetActive(true);
         }
         else
         {
             textComponent.text = message.text;
+            cursor.gameObject.SetActive(false);
         }
     }
 
@@ -68,10 +70,22 @@ public class MessageText : MonoBehaviour
             else
             {
                 var selected = cursor.getCurrentSelected();
-                var eventId = message.selections[selected];
-                var loveEvent = EventLoader.SpawnEventById(eventId);
-                loveEvent.run(this);
+                var eventIds = message.selections[selected].Split(',');
+                foreach (var eventId in eventIds)
+                {
+                    var loveEvent = EventLoader.SpawnEventById(eventId);
+                    loveEvent.run(this);
+                }
             }
+        }
+    }
+
+    public void Next(int index = -1)
+    {
+        if (index > 0)
+        {
+            textId = index;
+            LoadMessage();
         }
     }
 }
