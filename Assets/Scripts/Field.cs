@@ -5,6 +5,9 @@ using UnityEngine.Tilemaps;
 using System.Text.RegularExpressions;
 using System.Text;
 
+/*------------------------------------------
+ * EChipType  : チップのタイプ
+ -------------------------------------------*/
 public enum EChipType
 {
     eNone,

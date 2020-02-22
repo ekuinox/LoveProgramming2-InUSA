@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private Field field;
-    //[SerializeField] private Tilemap tilemap; 
 
     private float offsetX = 0.5f, offsetY = 0.5f;
     private int moveX = 0, moveY = 0;
@@ -61,5 +60,13 @@ public class PlayerController : MonoBehaviour
 
         // プレイヤーの位置を更新
         this.gameObject.transform.position = new Vector3(offsetX + moveX, offsetY + moveY, 0);
+
+
+        // アクションを行う
+        if (Input.GetButtonDown("Action"))
+        {
+            // アクションの呼び出し処理
+            Debug.Log("アクションをする");
+        }
     }
 }
