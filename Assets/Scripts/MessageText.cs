@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,33 +28,51 @@ public class MessageText : MonoBehaviour
     void Start()
     {
         LoadJson();
+        LoadMessage();
+    }
+
+    void LoadMessage()
+    {
         var textComponent = gameObject.GetComponent<Text>();
         textComponent.text = "";
-        switch (message.type)
-        {
-            // 選択肢つき
-            case 1:
-                {
-                }
-                break;
-            default:
-                {
-                    textComponent.text = message.text;
-                }
-                break;
-        }
-        textComponent.text = message.text;
-        // 選択肢のあるやつ
         if (message.type == 1)
         {
-            var selections = message.selections.Keys;
-            selections.
+            foreach (var text in message.selections.Keys)
+            {
+                textComponent.text += $"{text}\n";
+            }
+            cursor.setSelections(message);
+        }
+        else
+        {
+            textComponent.text = message.text;
         }
     }
 
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Return))
+        {
+            if (message.isNormal)
+            {
+                var nextId = message.nextId;
+                if (nextId < 0)
+                {
+                    // todo マップに戻る
+                    return;
+                }
+
+                textId = nextId;
+                LoadMessage();
+            }
+            else
+            {
+                var selected = cursor.getCurrentSelected();
+                var eventId = message.selections[selected];
+                var loveEvent = EventLoader.SpawnEventById(eventId);
+                loveEvent.run();
+            }
+        }
     }
 
     static public void LoadJson(string path = null)
