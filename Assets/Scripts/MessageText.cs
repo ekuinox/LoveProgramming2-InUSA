@@ -140,7 +140,7 @@ public class MessageText : MonoBehaviour
             {
                 isDay4 = false;
             }
-            if (!SceneController.LoadScene(SceneController.lastState))
+            if (!SceneController.LoadScene(SceneController.lastState == ESceneState.eTitle ? ESceneState.eSanFrancisco : SceneController.lastState))
             {
                 // 失敗時
                 LoadMessage();
