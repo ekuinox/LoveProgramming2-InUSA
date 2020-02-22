@@ -1,23 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class TitleScene : MonoBehaviour
+public class DateText : MonoBehaviour
 {
+    private Text date;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        date = this.gameObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
-        {
-            MessageText.textId = 2;
-            SceneController.LoadScene(ESceneState.eGalGame);
-        }
+        date.text = Manager.GetPassedDay().ToString();
     }
 }

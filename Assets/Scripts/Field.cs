@@ -30,6 +30,7 @@ public enum EChipType
     eKitchen,
     eToilet,
     eBath,
+    eExit
 }
 
 public class Field : MonoBehaviour
@@ -142,9 +143,9 @@ public class Field : MonoBehaviour
             case 44:
             case 45:
             case 46:
-            case 48:
-            case 49:
-            case 50:
+            //case 48:
+            //case 49:
+            //case 50:
             case 60:
             case 61:
             case 62:
@@ -232,6 +233,10 @@ public class Field : MonoBehaviour
             case 126:
             case 127:
                 return EChipType.eBath;
+
+            // 出口
+            case 4:
+                return EChipType.eExit;
 
             // 壁(イベントなし)
             case 3:

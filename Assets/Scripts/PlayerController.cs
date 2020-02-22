@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
         this.gameObject.transform.position = new Vector3(offsetX + moveX, offsetY + moveY, 0);
 
 
-        // アクションを行う
+        // イベントを選択
         if (Input.GetButtonDown("Action") && field.GetNextChipType(moveX, moveY, direction) != EChipType.eNone)
         {
             Debug.Log("アクションをする");
@@ -90,14 +90,43 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*------------------------------------------
+     * SetTextID  : メッセージIDを設定
+     * 戻り値     : 読み込みに成功したか
+     -------------------------------------------*/
     private bool SetTextID()
     {
         EChipType type = field.GetNextChipType(moveX, moveY, direction);
 
         switch (type)
         {
+            // ティッシュイベント
             case EChipType.eTissue:
                 MessageText.textId = 1;
+                return true;
+
+            // 出口イベント
+            case EChipType.eExit:
+                if (SceneController.currentState == ESceneState.eSanFrancisco)
+                {
+                    MessageText.textId = 17;
+                }
+                else if (SceneController.currentState == ESceneState.eLosAngeles)
+                {
+                    int id = Random.Range(0, 1);
+
+                    if (id == 0) MessageText.textId = 42;
+                    else if (id == 1) MessageText.textId = 36;
+                }
+                return true;
+
+            // ベッドイベント
+            case EChipType.eBed:
+
+                int id2 = Random.Range(0, 1);
+                if (id2 == 0) MessageText.textId = 62;
+                else if (id2 == 1) MessageText.textId = 63;
+
                 return true;
 
             default:
@@ -105,3 +134,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
+
+//ロス　42、36
+//サン　17
