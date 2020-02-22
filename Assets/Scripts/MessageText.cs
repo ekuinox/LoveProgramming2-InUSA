@@ -27,7 +27,7 @@ public class MessageText : MonoBehaviour
 
     void Start()
     {
-        LoadJson();
+        Manager.Load();
         LoadMessage();
     }
 
@@ -73,11 +73,5 @@ public class MessageText : MonoBehaviour
                 loveEvent.run(this);
             }
         }
-    }
-
-    static public void LoadJson(string path = null)
-    {
-        messages = MessageLoader.GetFromFile(path ?? $"{Application.dataPath}/messages.json").ToArray();
-        EventLoader.GetFromFile($"{Application.dataPath}/events.json");
     }
 }
