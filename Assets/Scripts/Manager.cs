@@ -4,7 +4,7 @@ public static class Manager
 {
     private static bool isLoaded = false;
 
-    private static Message[] messages;
+    public static Message[] messages;
 
     public static int unityLovePoint = 0;
 
@@ -19,5 +19,5 @@ public static class Manager
             isLoaded = true;
         }
     }
-   
+
 }
