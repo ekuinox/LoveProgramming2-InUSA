@@ -6,19 +6,12 @@
 		"selection": []
 	},
 	{
+		"id": 1,
 		"type": 1,
 		"text": "",
 		"selection": {
-			"foo": "decreaseLove",
-			"bar": null,
-			"baz": null
-		},
-		"nextId": 1,
-
-	},
-	{
-		"type": 0,
-		"text": "あこんにちは～",
-		"selection": []
+			"シコってねる": "decreaseLoveAll",
+			"シコらない": ""
+		}
 	}
 ]
