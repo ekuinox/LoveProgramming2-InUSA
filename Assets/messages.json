@@ -6,27 +6,28 @@
 		"nextId": 0,
 		"type": -1,
 		"text": "",
-		"selection": {}
+		"selections": { }
 	},
 	{
 		"id": 1,
 		"backgroundImageType": 0,
 		"characterImageType": 0,
-		"type": 1,
-		"nextId": 2,
+		"type": 0,
+		"nextId": 1,
 		"text": "",
 		"selections": {
 			"シコってねる": "decreaseLoveAll",
 			"シコらない": ""
 		}
 	},
+
 	{
 		"id": 2,
 		"backgroundImageType": 0,
 		"characterImageType": 0,
 		"type": 0,
-		"nextId": 0,
-		"text": ".........うっ",
+		"nextId": 3,
+		"text": "アメリカ旅行0日目、オレは飛行機に乗ってサンフランシスコへ向かっている。¥n小腹が空いたので、持ってきたランチパックを食べることにした。",
 		"selections": {}
 	},
 	{
@@ -35,15 +36,6 @@
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 4,
-		"text": "アメリカ旅行0日目、オレは飛行機に乗ってサンフランシスコへ向かっている。¥n小腹が空いたので、持ってきたランチパックを食べることにした。",
-		"selections": {}
-	},
-	{
-		"id": 4,
-		"backgroundImageType": 0,
-		"characterImageType": 0,
-		"type": 0,
-		"nextId": 5,
 		"text": "「お、ランチパックパンパンになっとるやんwwww」¥n 気圧によってランチパックが膨れ上がっていた。",
 		"selections": {}
 	},
@@ -593,6 +585,24 @@
 		"type": 2,
 		"nextId": 60,
 		"text": "-鈴木エンド-",
+		"selections": {}
+	},
+	{
+		"id": 61,
+		"backgroundImageType": 1,
+		"characterImageType": 3,
+		"type": 0,
+		"nextId": 0,
+		"text": "今日はUnityちゃんとイチャイチャした。最高や...",
+		"selections": {}
+	},
+	{
+		"id": 62,
+		"backgroundImageType": 1,
+		"characterImageType": 3,
+		"type": 0,
+		"nextId": 0,
+		"text": "今日はUEちゃんとイチャイチャした。最高や...",
 		"selections": {}
 	}
 ]
