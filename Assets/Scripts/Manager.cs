@@ -44,4 +44,9 @@ public static class Manager
     {
         return passedDays;
     }
+
+    public static void FirstDay()
+    {
+        passedDays = 1;
+    }
 }

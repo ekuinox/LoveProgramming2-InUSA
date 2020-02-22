@@ -27,6 +27,11 @@ static public class SceneController
         lastState = currentState;
         currentState = state;
 
+        if (state == ESceneState.eTitle)
+        {
+            Manager.FirstDay();
+        }
+
         int index = GetSceneIndex(state);
         SceneManager.LoadScene(index, LoadSceneMode.Single);
         return true;
