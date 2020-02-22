@@ -70,9 +70,12 @@ public class MessageText : MonoBehaviour
             else
             {
                 var selected = cursor.getCurrentSelected();
-                var eventId = message.selections[selected];
-                var loveEvent = EventLoader.SpawnEventById(eventId);
-                loveEvent.run(this);
+                var eventIds = message.selections[selected].Split(',');
+                foreach (var eventId in eventIds)
+                {
+                    var loveEvent = EventLoader.SpawnEventById(eventId);
+                    loveEvent.run(this);
+                }
             }
         }
     }
