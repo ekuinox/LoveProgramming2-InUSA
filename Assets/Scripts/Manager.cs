@@ -6,9 +6,9 @@ public static class Manager
 
     private static Message[] messages;
 
-    static int unityLovePoint = 0;
-    
-    static int ue4LovePoint = 0;
+    public static int unityLovePoint = 0;
+
+    public static int ue4LovePoint = 0;
 
     public static void Load(bool isForce = false)
     {
