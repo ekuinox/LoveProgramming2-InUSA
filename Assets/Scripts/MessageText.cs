@@ -118,7 +118,11 @@ public class MessageText : MonoBehaviour
         else
         {
             // マップに戻る
-            SceneController.LoadScene(SceneController.lastState);
+            if (!SceneController.LoadScene(SceneController.lastState))
+            {
+                // 失敗時
+                LoadMessage();
+            }
         }
     }
 }
