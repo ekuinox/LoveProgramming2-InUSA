@@ -536,7 +536,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textures:
-  - {fileID: 2800000, guid: 4f3bba6ddfb0f4748bad55c52bd96cd0, type: 3}
+  - {fileID: 2800000, guid: c3b080c295052e9409fb45923271f56d, type: 3}
+  - {fileID: 2800000, guid: a576847aa13b993488dfa4a56c7d1b78, type: 3}
+  - {fileID: 2800000, guid: 5c936055ae95acb4098caf33c22f0ac3, type: 3}
+  - {fileID: 2800000, guid: c379852686637e246b3602634ffab49a, type: 3}
+  - {fileID: 2800000, guid: 702e51bb9f4313e4c95f76a0b411fb00, type: 3}
 --- !u!1 &1475042997
 GameObject:
   m_ObjectHideFlags: 0
