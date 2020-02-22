@@ -57,4 +57,13 @@ public class SelectionCursor : MonoBehaviour
     {
         return selections[currentSelected];
     }
+
+    public void setActive(bool active)
+    {
+        gameObject.SetActive(active);
+        if (!active)
+        {
+            clear();
+        }
+    }
 }
