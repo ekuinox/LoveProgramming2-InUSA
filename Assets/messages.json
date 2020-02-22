@@ -1,16 +1,16 @@
 [
 	{
 		"id": 0,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"nextId": 0,
 		"type": -1,
 		"text": "",
-		"selections": { }
+		"selection": {}
 	},
 	{
 		"id": 1,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 1,
@@ -23,7 +23,7 @@
 
 	{
 		"id": 2,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 3,
@@ -32,7 +32,7 @@
 	},
 	{
 		"id": 3,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 4,
@@ -41,7 +41,7 @@
 	},
 	{
 		"id": 4,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 1,
 		"nextId": 7,
@@ -53,7 +53,7 @@
 	},
 	{
 		"id": 5,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 6,
@@ -62,16 +62,16 @@
 	},
 	{
 		"id": 6,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 3,
-		"nextId": 5,
+		"nextId": 6,
 		"text": "だが、持ち込んだこのランチパックは地上でしぼみ、¥nこのランチパックが原因でアメリカ入国を拒否られてしまった...¥n　-ランチパックエンド-",
 		"selections": {}
 	},
 	{
 		"id": 7,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 8,
@@ -80,7 +80,7 @@
 	},
 	{
 		"id": 8,
-		"backgroundImageType": 0,
+		"backgroundImageType": 3,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 9,
@@ -89,7 +89,7 @@
 	},
 	{
 		"id": 9,
-		"backgroundImageType": 0,
+		"backgroundImageType": 3,
 		"characterImageType": 0,
 		"type": 1,
 		"nextId": 16,
@@ -102,7 +102,7 @@
 	},
 	{
 		"id": 10,
-		"backgroundImageType": 0,
+		"backgroundImageType": 3,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 11,
@@ -111,7 +111,7 @@
 	},
 	{
 		"id": 11,
-		"backgroundImageType": 0,
+		"backgroundImageType": 3,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 12,
@@ -120,7 +120,7 @@
 	},
 	{
 		"id": 12,
-		"backgroundImageType": 0,
+		"backgroundImageType": 3,
 		"characterImageType": 0,
 		"type": 3,
 		"nextId": 12,
@@ -129,6 +129,8 @@
 	},
 	{
 		"id": 13,
+		"backgroundImageType": 3,
+		"characterImageType": 0,
 		"type": 0,
 		"nextId": 14,
 		"text": "「まあ検査せんでも大丈夫やろwww」",
@@ -136,7 +138,7 @@
 	},
 	{
 		"id": 14,
-		"backgroundImageType": 0,
+		"backgroundImageType": 3,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 15,
@@ -145,7 +147,7 @@
 	},
 	{
 		"id": 15,
-		"backgroundImageType": 0,
+		"backgroundImageType": 3,
 		"characterImageType": 0,
 		"type": 3,
 		"nextId": 15,
@@ -154,7 +156,7 @@
 	},
 	{
 		"id": 16,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 0,
@@ -163,7 +165,7 @@
 	},
 	{
 		"id": 17,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 18,
@@ -172,7 +174,7 @@
 	},
 	{
 		"id": 17,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 18,
@@ -181,7 +183,7 @@
 	},
 	{
 		"id": 18,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 19,
@@ -190,7 +192,7 @@
 	},
 	{
 		"id": 19,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 1,
 		"nextId": 20,
@@ -202,7 +204,7 @@
 	},
 	{
 		"id": 20,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 0,
@@ -211,7 +213,7 @@
 	},
 	{
 		"id": 21,
-		"backgroundImageType": 0,
+		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 0,
@@ -295,7 +297,7 @@
 	},
 	{
 		"id": 31,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 32,
@@ -304,7 +306,7 @@
 	},
 	{
 		"id": 32,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 1,
 		"nextId": 35,
@@ -316,7 +318,7 @@
 	},
 	{
 		"id": 33,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 34,
@@ -325,7 +327,7 @@
 	},
 	{
 		"id": 34,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 3,
 		"nextId": 34,
@@ -334,7 +336,7 @@
 	},
 	{
 		"id": 35,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 0,
@@ -401,7 +403,7 @@
 	},
 	{
 		"id": 42,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 43,
@@ -410,7 +412,7 @@
 	},
 	{
 		"id": 43,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 44,
@@ -419,7 +421,7 @@
 	},
 	{
 		"id": 44,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 1,
 		"nextId": 50,
@@ -432,7 +434,7 @@
 	},
 	{
 		"id": 45,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 46,
@@ -441,7 +443,7 @@
 	},
 	{
 		"id": 46,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 47,
@@ -450,7 +452,7 @@
 	},
 	{
 		"id": 48,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 3,
 		"nextId": 49,
@@ -459,7 +461,7 @@
 	},
 	{
 		"id": 48,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 3,
 		"nextId": 48,
@@ -468,7 +470,7 @@
 	},
 	{
 		"id": 49,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 3,
 		"nextId": 49,
@@ -477,7 +479,7 @@
 	},
 	{
 		"id": 50,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 0,
@@ -486,7 +488,7 @@
 	},
 	{
 		"id": 51,
-		"backgroundImageType": 0,
+		"backgroundImageType": 2,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 52,
@@ -495,7 +497,7 @@
 	},
 	{
 		"id": 52,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 53,
@@ -504,7 +506,7 @@
 	},
 	{
 		"id": 53,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 54,
@@ -513,7 +515,7 @@
 	},
 	{
 		"id": 54,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 1,
 		"nextId": 57,
@@ -526,7 +528,7 @@
 	},
 	{
 		"id": 55,
-		"backgroundImageType": 0,
+		"backgroundImageType": 4,
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 56,
@@ -590,7 +592,7 @@
 	{
 		"id": 61,
 		"backgroundImageType": 1,
-		"characterImageType": 3,
+		"characterImageType": 1,
 		"type": 0,
 		"nextId": 0,
 		"text": "今日はUnityちゃんとイチャイチャした。最高や...",
@@ -599,7 +601,7 @@
 	{
 		"id": 62,
 		"backgroundImageType": 1,
-		"characterImageType": 3,
+		"characterImageType": 2,
 		"type": 0,
 		"nextId": 0,
 		"text": "今日はUEちゃんとイチャイチャした。最高や...",
