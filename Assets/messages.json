@@ -12,7 +12,7 @@
 		"id": 1,
 		"backgroundImageType": 1,
 		"characterImageType": 0,
-		"type": 0,
+		"type": 1,
 		"nextId": -1,
 		"text": "",
 		"selections": {
