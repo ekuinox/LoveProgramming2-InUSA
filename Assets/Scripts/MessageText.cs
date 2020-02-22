@@ -74,4 +74,13 @@ public class MessageText : MonoBehaviour
             }
         }
     }
+
+    public void Next(int index = -1)
+    {
+        if (index > 0)
+        {
+            textId = index;
+            LoadMessage();
+        }
+    }
 }
