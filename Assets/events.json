@@ -47,38 +47,38 @@
 	"fuck": {
 		"type": "changeNextMessage",
 		"args": {
-			"nextId": 21
+			"nextId": 23
 		}
 	},
 
 
 	"gero_End": {
 		"type": "changeNextMessage",
-		"args": { "nextId": 26 }
+		"args": { "nextId": 28 }
 	},
 
 	"abare_End": {
 		"type": "changeNextMessage",
-		"args": { "nextId": 33 }
+		"args": { "nextId": 34 }
 	},
 
 	"gamble_End": {
 		"type": "changeNextMessage",
-		"args": { "nextId": 39 }
+		"args": { "nextId": 40}
 	},
 
 	"CanSee_End": {
 		"type": "changeNextMessage",
-		"args": { "nextId": 45 }
+		"args": { "nextId": 46 }
 	},
 
 	"Eat_End": {
 		"type": "changeNextMessage",
-		"args": { "nextId": 49 }
+		"args": { "nextId": 50 }
 	},
 
 	"dead_End": {
 		"type": "changeNextMessage",
-		"args": { "nextId": 55 }
+		"args": { "nextId": 56}
 	}
 }
