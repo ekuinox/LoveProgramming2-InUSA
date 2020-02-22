@@ -35,7 +35,7 @@ public class MessageText : MonoBehaviour
     {
         var textComponent = gameObject.GetComponent<Text>();
         textComponent.text = "";
-        if (message.type == 1)
+        if (!message.isNormal)
         {
             foreach (var text in message.selections.Keys)
             {
@@ -55,28 +55,45 @@ public class MessageText : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (message.isNormal)
+            switch (message.type)
             {
-                Next(message.nextId);
-            }
-            else
-            {
-                var selected = cursor.getCurrentSelected();
-                var eventIds = message.selections[selected].Split(',');
-                var isIgnoredNext = false;
-                foreach (var eventId in eventIds)
-                {
-                    var loveEvent = EventLoader.SpawnEventById(eventId);
-                    loveEvent.run(this);
-                    if (loveEvent.GetType() == typeof(ChangeNextMessage))
-                    {
-                        isIgnoredNext = true;
-                    }
-                }
-                if (!isIgnoredNext)
-                {
+                case Message.MessageType.Normal:
                     Next(message.nextId);
-                }
+                    break;
+                case Message.MessageType.Selection:
+                    {
+                        var selected = cursor.getCurrentSelected();
+                        var eventIds = message.selections[selected].Split(',');
+                        var isIgnoredNext = false;
+                        foreach (var eventId in eventIds)
+                        {
+                            var loveEvent = EventLoader.SpawnEventById(eventId);
+                            loveEvent.run(this);
+                            if (loveEvent.GetType() == typeof(ChangeNextMessage))
+                            {
+                                isIgnoredNext = true;
+                            }
+                        }
+                        if (!isIgnoredNext)
+                        {
+                            Next(message.nextId);
+                        }
+                    }
+                    break;
+                case Message.MessageType.GameClear:
+                    {
+                        var gameClearEvent = new GameClearEvent();
+                        gameClearEvent.init(new Dictionary<string, string>());
+                        gameClearEvent.run(this);
+                    }
+                    break;
+                case Message.MessageType.GameOver:
+                    {
+                        var gameOverEvent = new GameOverEvent();
+                        gameOverEvent.init(new Dictionary<string, string>());
+                        gameOverEvent.run(this);
+                    }
+                    break;
             }
         }
     }
