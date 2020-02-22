@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SanFrancisco.unity
+    guid: 8e725d76f61e91943a356c3df5ab2e9b
+  - enabled: 1
+    path: Assets/Scenes/LosAngeles.unity
+    guid: a46c7cfd326fb2a4186a0a2b24a8641d
+  - enabled: 1
+    path: Assets/Scenes/GalGameScene.unity
+    guid: 64cdd45b81d2d4c448dfbae0e50c96c3
   m_configObjects: {}
