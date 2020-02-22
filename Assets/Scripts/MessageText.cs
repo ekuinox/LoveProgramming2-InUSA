@@ -57,15 +57,8 @@ public class MessageText : MonoBehaviour
         {
             if (message.isNormal)
             {
-                var nextId = message.nextId;
-                if (nextId < 0)
-                {
-                    // todo マップに戻る
-                    return;
+                Next(message.nextId);
                 }
-
-                Next(nextId);
-            }
             else
             {
                 var selected = cursor.getCurrentSelected();
@@ -85,6 +78,10 @@ public class MessageText : MonoBehaviour
         {
             textId = index;
             LoadMessage();
+        }
+        else
+        {
+            // マップに戻る
         }
     }
 }
