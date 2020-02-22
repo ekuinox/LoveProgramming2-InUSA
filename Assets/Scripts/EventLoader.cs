@@ -51,7 +51,7 @@ public static class EventLoader
             case "decreaseLove":
                 return typeof(DecreaseLoveEvent);
         }
-        return typeof(LoveEvent);
+        return typeof(DoNothing);
     }
 
     public static LoveEvent SpawnEventById(string id)
