@@ -12,21 +12,22 @@
 		"id": 1,
 		"backgroundImageType": 0,
 		"characterImageType": 0,
-		"type": 1,
-		"nextId": -1,
+		"type": 0,
+		"nextId": 1,
 		"text": "",
 		"selections": {
 			"シコってねる": "decreaseLoveAll",
 			"シコらない": ""
 		}
 	},
+
 	{
 		"id": 2,
 		"backgroundImageType": 0,
 		"characterImageType": 0,
 		"type": 0,
-		"nextId": 0,
-		"text": ".........うっ",
+		"nextId": 3,
+		"text": "アメリカ旅行0日目、オレは飛行機に乗ってサンフランシスコへ向かっている。¥n小腹が空いたので、持ってきたランチパックを食べることにした。",
 		"selections": {}
 	},
 	{
@@ -35,15 +36,6 @@
 		"characterImageType": 0,
 		"type": 0,
 		"nextId": 4,
-		"text": "アメリカ旅行0日目、オレは飛行機に乗ってサンフランシスコへ向かっている。¥n小腹が空いたので、持ってきたランチパックを食べることにした。",
-		"selections": {}
-	},
-	{
-		"id": 4,
-		"backgroundImageType": 0,
-		"characterImageType": 0,
-		"type": 0,
-		"nextId": 5,
 		"text": "「お、ランチパックパンパンになっとるやんwwww」¥n 気圧によってランチパックが膨れ上がっていた。",
 		"selections": {}
 	},
@@ -405,6 +397,212 @@
 		"type": 3,
 		"nextId": 0,
 		"text": "金は使わなかったが、ラスベガスを満喫できた。",
+		"selections": {}
+	},
+	{
+		"id": 42,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 43,
+		"text": "今日はBIGステーキを食べに来た¥n楽しみだなぁ¥n早速だが肉が来た¥nでも来る前にピザを食べたせいで腹がいっぱいだ。",
+		"selections": {}
+	},
+	{
+		"id": 43,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 44,
+		"text": "「頑張って食うか～」¥nだが、このTボーンステーキ、どこを食えばいいかわからない。",
+		"selections": {}
+	},
+	{
+		"id": 44,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 1,
+		"nextId": 50,
+		"text": "",
+		"selections": {
+			"店員に聞く": "CanSee_End",
+			"全部食う": "Eat_End",
+			"持ち帰る": ""
+		}
+	},
+	{
+		"id": 45,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 46,
+		"text": "「ワッツ、カッティングエリア？」¥オレは周りの目も気にせず店員にどこが食えるか聞いた。¥n全然伝わらなかったが、何とか理解してくれた。",
+		"selections": {}
+	},
+	{
+		"id": 46,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 47,
+		"text": "だが、丁寧にどこを食べればいいか教えてくれた後に店員が¥n「You Can See(見りゃわかるだろ)」と言った。",
+		"selections": {}
+	},
+	{
+		"id": 48,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 49,
+		"text": "オレはその事実にきづけなかった。¥nそのショックでショック死してしまった...¥n-見りゃわかるだろエンド-",
+		"selections": {}
+	},
+	{
+		"id": 48,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 48,
+		"text": "オレはその事実にきづけなかった。¥nそのショックでショック死してしまった...¥n-見りゃわかるだろエンド-",
+		"selections": {}
+	},
+	{
+		"id": 49,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 49,
+		"text": "「ウッ…」¥nオレはTボーンを丸呑みして食べたせいでのどに詰まらせ死んでしまった...¥n-のど詰まらせエンド-",
+		"selections": {}
+	},
+	{
+		"id": 50,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 0,
+		"text": "「まあ後から食えばええやろ」¥nオレは食べられない分は持ち帰ることにした。",
+		"selections": {}
+	},
+	{
+		"id": 51,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 52,
+		"text": "長かったアメリカ旅行もこれで最後だ...¥nなんだか大変だった気がする。",
+		"selections": {}
+	},
+	{
+		"id": 52,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 53,
+		"text": "「じゃあなアメリカ。楽しかったわ」¥nオレはアメリカに別れを告げた。",
+		"selections": {}
+	},
+	{
+		"id": 53,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 54,
+		"text": "その時である。¥n飛行機が大きく揺れた。もしや...",
+		"selections": {}
+	},
+	{
+		"id": 54,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 1,
+		"nextId": 57,
+		"text": "",
+		"selections": {
+			"「夢かな？」": "",
+			"「墜落かな？」": "dead_End",
+			"「大丈夫やろww」": "dead_End"
+		}
+	},
+	{
+		"id": 55,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 56,
+		"text": "機体の揺れは大きくなる...！¥nこのまま機体は落ちてしまった...¥どうやらオレのお土産が爆発してしまったらしい...",
+		"selections": {}
+	},
+	{
+		"id": 56,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 56,
+		"text": "-無自覚テロリストエンド-",
+		"selections": {}
+	},
+	{
+		"id": 57,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 58,
+		"text": "夢だった。¥nとにかくオレは日本に帰ってくることができた。",
+		"selections": {}
+	},
+	{
+		"id": 57,
+		"backgroundImageType": 0,
+		"characterImageType": 3,
+		"type": 0,
+		"nextId": 58,
+		"text": "「ばかたれが」¥nなんと先生が迎えに来てくれていたのだ。",
+		"selections": {}
+	},
+	{
+		"id": 58,
+		"backgroundImageType": 0,
+		"characterImageType": 3,
+		"type": 0,
+		"nextId": 59,
+		"text": "「きょ、去年の課題落としとるやろ！お前もう就職できへんぞ」",
+		"selections": {}
+	},
+	{
+		"id": 59,
+		"backgroundImageType": 0,
+		"characterImageType": 3,
+		"type": 0,
+		"nextId": 60,
+		"text": "そうだ、忘れていた。オレはこんなことをしている場合ではなかった。¥nこうしてオレはもう一年、先生と過ごすことになるんだ…",
+		"selections": {}
+	},
+	{
+		"id": 60,
+		"backgroundImageType": 0,
+		"characterImageType": 3,
+		"type": 2,
+		"nextId": 60,
+		"text": "-鈴木エンド-",
+		"selections": {}
+	},
+	{
+		"id": 61,
+		"backgroundImageType": 1,
+		"characterImageType": 3,
+		"type": 0,
+		"nextId": 0,
+		"text": "今日はUnityちゃんとイチャイチャした。最高や...",
+		"selections": {}
+	},
+	{
+		"id": 62,
+		"backgroundImageType": 1,
+		"characterImageType": 3,
+		"type": 0,
+		"nextId": 0,
+		"text": "今日はUEちゃんとイチャイチャした。最高や...",
 		"selections": {}
 	}
 ]
