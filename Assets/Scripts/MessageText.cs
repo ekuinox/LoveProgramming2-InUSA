@@ -15,6 +15,12 @@ public class MessageText : MonoBehaviour
 
     static private Message[] messages;
 
+    [SerializeField]
+    private Background background;
+
+    [SerializeField]
+    private Character character;
+
     private Message message
     {
         get
@@ -49,6 +55,10 @@ public class MessageText : MonoBehaviour
             textComponent.text = message.text;
             cursor.setActive(false);
         }
+
+        // 画像セット
+        background.setTexture(message.backgroundImageType);
+        character.setTexture(message.characterImageType);
     }
 
     void Update()
