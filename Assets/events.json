@@ -2,21 +2,68 @@
 	"decreaseLoveAll": {
 		"type": "decreaseLove",
 		"args": {
-			"count": 1,
+			"count": 1
 		}
 	},
 	"decreaseLoveUnity": {
 		"type": "decreaseLove",
 		"args": {
 			"count": 1,
-			"target": 0,
+			"target": 0
 		}
 	},
 	"decreaseLoveUE4": {
 		"type": "decreaseLove",
 		"args": {
 			"count": 1,
-			"target": 1,
+			"target": 1
 		}
+	},
+
+	"GameOver": {
+		"type": "gameOver",
+		"args": []
+	},
+	"GameClear": {
+		"type": "gameClear",
+		"args": []
+	},
+
+	"lunchpack_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 5 }
+	},
+
+	"simon01_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 10 }
+	},
+
+	"simon02_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 13 }
+	},
+
+	"fuck": {
+		"type": "changeNextMessage",
+		"args": {
+			"nextId": 21
+		}
+	},
+
+
+	"gero_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 26 }
+	},
+
+	"abare_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 33 }
+	},
+
+	"gamble_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 39 }
 	}
 }
