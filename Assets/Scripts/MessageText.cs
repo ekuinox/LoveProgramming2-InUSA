@@ -126,6 +126,11 @@ public class MessageText : MonoBehaviour
         else
         {
             // 三日目
+            if (Manager.GetPassedDay() == 10)
+            {
+                Next(52);
+                return;
+            }
             if (Manager.GetPassedDay() == 3)
             {
                 Next(25);
