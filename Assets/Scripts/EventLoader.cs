@@ -16,8 +16,16 @@ public static class EventLoader
 
     public static Dictionary<string, EventData> GetFromJson(string json)
     {
-        eventDataDict = JsonConvert.DeserializeObject<Dictionary<string, EventData>> (json);
-        return eventDataDict;
+        try
+        {
+            eventDataDict = JsonConvert.DeserializeObject<Dictionary<string, EventData>>(json);
+           return eventDataDict;
+        }
+        catch (JsonException exception)
+        {
+            Debug.Log($"[EventLoader#GetFromJson] error {exception.Message}");
+            return new Dictionary<string, EventData>();
+        }
     }
 
     public static Dictionary<string, EventData> GetFromFile(string filePath)
