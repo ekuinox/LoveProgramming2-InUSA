@@ -22,11 +22,11 @@ public class SelectionCursor : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             currentSelected += 1;
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             currentSelected -= 1;
         }
