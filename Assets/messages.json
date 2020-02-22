@@ -1,6 +1,7 @@
 [
 	{
 		"id": 0,
+		"nextId": 1,
 		"type": 0,
 		"text": "こんにちは～",
 		"selection": []
@@ -8,6 +9,7 @@
 	{
 		"id": 1,
 		"type": 1,
+		"nextId": 2,
 		"text": "",
 		"selection": {
 			"シコってねる": "decreaseLoveAll",
