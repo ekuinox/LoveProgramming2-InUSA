@@ -22,11 +22,11 @@
 
 	"GameOver": {
 		"type": "gameOver",
-		"args": []
+		"args": {}
 	},
 	"GameClear": {
 		"type": "gameClear",
-		"args": []
+		"args": {}
 	},
 
 	"lunchpack_End": {

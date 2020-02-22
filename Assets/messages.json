@@ -6,7 +6,7 @@
 		"nextId": 0,
 		"type": -1,
 		"text": "",
-		"selection": []
+		"selections": { }
 	},
 	{
 		"id": 1,
@@ -27,9 +27,8 @@
 		"type": 0,
 		"nextId": 0,
 		"text": ".........うっ",
-		"selections": []
+		"selections": {}
 	},
-
 	{
 		"id": 3,
 		"backgroundImageType": 0,
@@ -37,7 +36,7 @@
 		"type": 0,
 		"nextId": 4,
 		"text": "アメリカ旅行0日目、オレは飛行機に乗ってサンフランシスコへ向かっている。¥n小腹が空いたので、持ってきたランチパックを食べることにした。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 4,
@@ -46,7 +45,7 @@
 		"type": 0,
 		"nextId": 5,
 		"text": "「お、ランチパックパンパンになっとるやんwwww」¥n 気圧によってランチパックが膨れ上がっていた。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 4,
@@ -67,7 +66,7 @@
 		"type": 0,
 		"nextId": 6,
 		"text": "「お土産に持って帰るかwww」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 6,
@@ -76,7 +75,7 @@
 		"type": 3,
 		"nextId": 5,
 		"text": "だが、持ち込んだこのランチパックは地上でしぼみ、¥nこのランチパックが原因でアメリカ入国を拒否られてしまった...¥n　-ランチパックエンド-",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 7,
@@ -85,7 +84,7 @@
 		"type": 0,
 		"nextId": 8,
 		"text": "「うまいうまい、うまいなぁ」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 8,
@@ -94,7 +93,7 @@
 		"type": 0,
 		"nextId": 9,
 		"text": "ようやくサンフランシスコ空港に到着した。¥n入国前に指紋検査をしなければならないらしいが...",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 9,
@@ -116,7 +115,7 @@
 		"type": 0,
 		"nextId": 11,
 		"text": "「まあ適当にやっても大丈夫やろwww」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 11,
@@ -125,7 +124,7 @@
 		"type": 0,
 		"nextId": 12,
 		"text": "だがしかし、指紋検査で後れを取り、他の外国人観光客と混じって並んでしまった。¥n「Hagy was left alone.」¥n誰かがそういったのが遠くから聞こえた...",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 12,
@@ -134,14 +133,14 @@
 		"type": 3,
 		"nextId": 12,
 		"text": "そうして指紋検査で引っかかり、オレはアメリカに入ることができなかった...¥n　　-指紋検査エンド①-",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 13,
 		"type": 0,
 		"nextId": 14,
 		"text": "「まあ検査せんでも大丈夫やろwww」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 14,
@@ -150,7 +149,7 @@
 		"type": 0,
 		"nextId": 15,
 		"text": "だがしかし、当然ながらそんなわけにはいかない...¥n「ばかたれが」¥nどこか頭の中でその言葉が聞こえた...",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 15,
@@ -159,7 +158,7 @@
 		"type": 3,
 		"nextId": 15,
 		"text": "そうして指紋検査で引っかかり、オレはアメリカに入ることができなかった...¥n　　-指紋検査エンド②-",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 16,
@@ -168,7 +167,7 @@
 		"type": 0,
 		"nextId": 0,
 		"text": "ようやくホテルに着いた。¥n税関で足止めを食らったオレは怒り心頭でホテルの机に綾鷹をたたきつけた。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 17,
@@ -177,7 +176,7 @@
 		"type": 0,
 		"nextId": 18,
 		"text": "「ちょっと下に行くか…」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 17,
@@ -186,7 +185,7 @@
 		"type": 0,
 		"nextId": 18,
 		"text": "エレベーターに乗ろうとすると外国人が先にいた。¥nどうやら上に行きたいらしい。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 18,
@@ -195,7 +194,7 @@
 		"type": 0,
 		"nextId": 19,
 		"text": "「down？」そう聞いてきた。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 19,
@@ -216,7 +215,7 @@
 		"type": 0,
 		"nextId": 0,
 		"text": "まあ一旦待ってからでもええか",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 21,
@@ -225,7 +224,7 @@
 		"type": 0,
 		"nextId": 0,
 		"text": "外国人「oh...fuck」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 22,
@@ -234,7 +233,7 @@
 		"type": 0,
 		"nextId": 23,
 		"text": "~アメリカ旅行後半、ロサンゼルスのバス~",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 23,
@@ -243,7 +242,7 @@
 		"type": 0,
 		"nextId": 24,
 		"text": "「オエ゛エ゛エ゛ｯ」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 24,
@@ -252,7 +251,7 @@
 		"type": 0,
 		"nextId": 25,
 		"text": "オレはひどいバス酔いで気分は最悪...このままだと死んでしまう...",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 25,
@@ -273,7 +272,7 @@
 		"type": 0,
 		"nextId": 27,
 		"text": "「オロロロロロロロロロロロロッッ！オエ“ッ！」¥n「ど、どうしたんだ萩原君！？いきなり吐き出して！？」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 28,
@@ -282,7 +281,7 @@
 		"type": 0,
 		"nextId": 29,
 		"text": "こうしてオレはバスに迷惑をかけてしまった。¥nどうやらオレはコロナウイルスにかかっていたらしい。¥nこのままオレはアメリカで朽ち果ててしまった。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 29,
@@ -291,7 +290,7 @@
 		"type": 3,
 		"nextId": 29,
 		"text": "-ゲロエンド-",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 30,
@@ -300,7 +299,7 @@
 		"type": 0,
 		"nextId": 31,
 		"text": "「なんとかホテルまで我慢するか…」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 31,
@@ -309,7 +308,7 @@
 		"type": 0,
 		"nextId": 32,
 		"text": "ロサンゼルスのホテルに到着。¥nしかしそこでもトラブルがあった。¥nなぜかオレのルームキーが配られなかったのである。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 32,
@@ -330,7 +329,7 @@
 		"type": 0,
 		"nextId": 34,
 		"text": "「ああああああああああああああああああ！」¥nオレは怒りのあまり手に持っている綾鷹を振り回し暴れた。¥nしかしすぐに屈強な警備員がオレを取り押さえた。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 34,
@@ -339,7 +338,7 @@
 		"type": 3,
 		"nextId": 34,
 		"text": "「ばかたれが」心のどこか遠くでそうつぶやく誰かがいた。¥nこうしてオレは強制送還された...¥n-あばれるくんエンド-",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 35,
@@ -348,7 +347,7 @@
 		"type": 0,
 		"nextId": 0,
 		"text": "「すいません、オレのルームキーないんすけど」¥nそう伝えたオレは後でしっかりルームキーをもらえた。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 36,
@@ -357,7 +356,7 @@
 		"type": 0,
 		"nextId": 37,
 		"text": "「ベガス楽しみやな～」¥nオレはベガスに来ていた。¥nこれから大儲けする予定だ。",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 37,
@@ -366,7 +365,7 @@
 		"type": 0,
 		"nextId": 38,
 		"text": "「どれで儲けよっかなぁ」",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 38,
@@ -388,7 +387,7 @@
 		"type": 0,
 		"nextId": 40,
 		"text": "「あっ！」¥nあまりにも一瞬で金が溶けてしまった。¥nそれだけでなく、多額の借金まで負ってしまった...",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 41,
@@ -397,7 +396,7 @@
 		"type": 3,
 		"nextId": 41,
 		"text": "こうしてオレはアメリカで借金を返せず、朽ち果ててしまった...¥n-ギャンブルエンド-",
-		"selections": []
+		"selections": {}
 	},
 	{
 		"id": 41,
@@ -406,6 +405,6 @@
 		"type": 3,
 		"nextId": 0,
 		"text": "金は使わなかったが、ラスベガスを満喫できた。",
-		"selections": []
+		"selections": {}
 	}
 ]

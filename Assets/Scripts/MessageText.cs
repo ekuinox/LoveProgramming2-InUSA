@@ -25,6 +25,10 @@ public class MessageText : MonoBehaviour
     {
         get
         {
+            if (Manager.messages.Length <= textId)
+            {
+                Debug.Log($"messages index error textId => {textId}");
+            }
             return Manager.messages[textId];
         }
     }
@@ -118,6 +122,11 @@ public class MessageText : MonoBehaviour
         else
         {
             // マップに戻る
+            if (!SceneController.LoadScene(SceneController.lastState))
+            {
+                // 失敗時
+                LoadMessage();
+            }
         }
     }
 }
