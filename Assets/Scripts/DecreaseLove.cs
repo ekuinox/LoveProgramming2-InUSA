@@ -14,7 +14,7 @@ public class DecreaseLoveEvent : LoveEvent
         this.count = int.Parse(count);
     }
 
-    public void run()
+    public void run(MessageText messageText)
     {
         UnityEngine.Debug.Log($"{count} 減らしちゃるぞ");
     }

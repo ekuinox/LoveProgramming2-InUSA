@@ -70,7 +70,7 @@ public class MessageText : MonoBehaviour
                 var selected = cursor.getCurrentSelected();
                 var eventId = message.selections[selected];
                 var loveEvent = EventLoader.SpawnEventById(eventId);
-                loveEvent.run();
+                loveEvent.run(this);
             }
         }
     }
@@ -78,5 +78,6 @@ public class MessageText : MonoBehaviour
     static public void LoadJson(string path = null)
     {
         messages = MessageLoader.GetFromFile(path ?? $"{Application.dataPath}/messages.json").ToArray();
+        EventLoader.GetFromFile($"{Application.dataPath}/events.json");
     }
 }
