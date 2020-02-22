@@ -16,7 +16,8 @@ public class TitleScene : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            SceneController.LoadScene(ESceneState.eSanFrancisco);
+            MessageText.textId = 1;
+            SceneController.LoadScene(ESceneState.eGalGame);
         }
     }
 }

@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
         this.gameObject.transform.position = new Vector3(offsetX + moveX, offsetY + moveY, 0);
 
 
-        // アクションを行う
+        // イベントを選択
         if (Input.GetButtonDown("Action") && field.GetNextChipType(moveX, moveY, direction) != EChipType.eNone)
         {
             Debug.Log("アクションをする");
@@ -90,13 +90,28 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*------------------------------------------
+     * SetTextID  : メッセージIDを設定
+     * 戻り値     : 読み込みに成功したか
+     -------------------------------------------*/
     private bool SetTextID()
     {
         EChipType type = field.GetNextChipType(moveX, moveY, direction);
 
         switch (type)
         {
+            // ティッシュイベント
             case EChipType.eTissue:
+                MessageText.textId = 1;
+                return true;
+
+            // 出口イベント
+            case EChipType.eExit:
+                MessageText.textId = 1;
+                return true;
+
+            // ベッドイベント
+            case EChipType.eBed:
                 MessageText.textId = 1;
                 return true;
 
