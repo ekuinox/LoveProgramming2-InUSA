@@ -9,7 +9,8 @@ public class Character : MonoBehaviour
     {
         None = 0,
         Unity = 1,
-        UE4 = 2
+        UE4 = 2,
+        Suzuki = 3
     }
 
     [SerializeField]
