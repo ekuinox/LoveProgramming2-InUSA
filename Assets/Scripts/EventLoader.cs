@@ -54,6 +54,8 @@ public static class EventLoader
                 return typeof(GameOverEvent);
             case "gameClear":
                 return typeof(GameClearEvent);
+            case "changeNextMessage":
+                return typeof(ChangeNextMessage);
         }
         return typeof(DoNothing);
     }
