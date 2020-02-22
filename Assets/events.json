@@ -65,5 +65,20 @@
 	"gamble_End": {
 		"type": "changeNextMessage",
 		"args": { "nextId": 39 }
+	},
+
+	"CanSee_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 45 }
+	},
+
+	"Eat_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 49 }
+	},
+
+	"dead_End": {
+		"type": "changeNextMessage",
+		"args": { "nextId": 55 }
 	}
 }
