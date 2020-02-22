@@ -15,8 +15,8 @@ public class DecreaseLoveEvent : LoveEvent
         this.count = int.Parse(count);
 
         var target = "0";
-        args.TryGetValue("target", out target);
-        this.target = int.Parse(target);
+        var result = args.TryGetValue("target", out target);
+        this.target = result ? int.Parse(target) : -1;
     }
 
     public void run(MessageText messageText)
@@ -32,6 +32,9 @@ public class DecreaseLoveEvent : LoveEvent
                 UnityEngine.Debug.Log($"ue4の好感度{count} 減らしちゃるぞ");
                 break;
             default:
+                Manager.ue4LovePoint -= count;
+                Manager.unityLovePoint -= count;
+                UnityEngine.Debug.Log($"全員の好感度{count} 減らしちゃるぞ");
                 break;
         }
     }
