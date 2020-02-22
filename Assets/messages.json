@@ -1,13 +1,17 @@
 [
 	{
 		"id": 0,
-		"nextId": 1,
-		"type": 0,
-		"text": "こんにちは～",
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"nextId": 0,
+		"type": -1,
+		"text": "",
 		"selection": []
 	},
 	{
 		"id": 1,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
 		"type": 1,
 		"nextId": 2,
 		"text": "",
@@ -15,5 +19,393 @@
 			"シコってねる": "decreaseLoveAll",
 			"シコらない": ""
 		}
+	},
+	{
+		"id": 2,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 0,
+		"text": ".........うっ",
+		"selections": []
+	},
+
+	{
+		"id": 3,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 4,
+		"text": "アメリカ旅行0日目、オレは飛行機に乗ってサンフランシスコへ向かっている。¥n小腹が空いたので、持ってきたランチパックを食べることにした。",
+		"selections": []
+	},
+	{
+		"id": 4,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 5,
+		"text": "「お、ランチパックパンパンになっとるやんwwww」¥n 気圧によってランチパックが膨れ上がっていた。",
+		"selections": []
+	},
+	{
+		"id": 4,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 1,
+		"nextId": 7,
+		"text": "",
+		"selections": {
+			"たべる": "",
+			"たべない": "lunchpack_End"
+		}
+	},
+	{
+		"id": 5,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 6,
+		"text": "「お土産に持って帰るかwww」",
+		"selections": []
+	},
+	{
+		"id": 6,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 5,
+		"text": "だが、持ち込んだこのランチパックは地上でしぼみ、¥nこのランチパックが原因でアメリカ入国を拒否られてしまった...¥n　-ランチパックエンド-",
+		"selections": []
+	},
+	{
+		"id": 7,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 8,
+		"text": "「うまいうまい、うまいなぁ」",
+		"selections": []
+	},
+	{
+		"id": 8,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 9,
+		"text": "ようやくサンフランシスコ空港に到着した。¥n入国前に指紋検査をしなければならないらしいが...",
+		"selections": []
+	},
+	{
+		"id": 9,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 1,
+		"nextId": 16,
+		"text": "",
+		"selections": {
+			"しっかりと検査する": "",
+			"適当にする": "simon01_End",
+			"しない": "simon02_End"
+		}
+	},
+	{
+		"id": 10,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 11,
+		"text": "「まあ適当にやっても大丈夫やろwww」",
+		"selections": []
+	},
+	{
+		"id": 11,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 12,
+		"text": "だがしかし、指紋検査で後れを取り、他の外国人観光客と混じって並んでしまった。¥n「Hagy was left alone.」¥n誰かがそういったのが遠くから聞こえた...",
+		"selections": []
+	},
+	{
+		"id": 12,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 12,
+		"text": "そうして指紋検査で引っかかり、オレはアメリカに入ることができなかった...¥n　　-指紋検査エンド①-",
+		"selections": []
+	},
+	{
+		"id": 13,
+		"type": 0,
+		"nextId": 14,
+		"text": "「まあ検査せんでも大丈夫やろwww」",
+		"selections": []
+	},
+	{
+		"id": 14,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 15,
+		"text": "だがしかし、当然ながらそんなわけにはいかない...¥n「ばかたれが」¥nどこか頭の中でその言葉が聞こえた...",
+		"selections": []
+	},
+	{
+		"id": 15,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 15,
+		"text": "そうして指紋検査で引っかかり、オレはアメリカに入ることができなかった...¥n　　-指紋検査エンド②-",
+		"selections": []
+	},
+	{
+		"id": 16,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 0,
+		"text": "ようやくホテルに着いた。¥n税関で足止めを食らったオレは怒り心頭でホテルの机に綾鷹をたたきつけた。",
+		"selections": []
+	},
+	{
+		"id": 17,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 18,
+		"text": "「ちょっと下に行くか…」",
+		"selections": []
+	},
+	{
+		"id": 17,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 18,
+		"text": "エレベーターに乗ろうとすると外国人が先にいた。¥nどうやら上に行きたいらしい。",
+		"selections": []
+	},
+	{
+		"id": 18,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 19,
+		"text": "「down？」そう聞いてきた。",
+		"selections": []
+	},
+	{
+		"id": 19,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 1,
+		"nextId": 20,
+		"text": "",
+		"selections": {
+			"「Yes.」": "fuck",
+			"「No.」": ""
+		}
+	},
+	{
+		"id": 20,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 0,
+		"text": "まあ一旦待ってからでもええか",
+		"selections": []
+	},
+	{
+		"id": 21,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 0,
+		"text": "外国人「oh...fuck」",
+		"selections": []
+	},
+	{
+		"id": 22,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 23,
+		"text": "~アメリカ旅行後半、ロサンゼルスのバス~",
+		"selections": []
+	},
+	{
+		"id": 23,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 24,
+		"text": "「オエ゛エ゛エ゛ｯ」",
+		"selections": []
+	},
+	{
+		"id": 24,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 25,
+		"text": "オレはひどいバス酔いで気分は最悪...このままだと死んでしまう...",
+		"selections": []
+	},
+	{
+		"id": 25,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 1,
+		"nextId": 30,
+		"text": "",
+		"selections": {
+			"吐く": "gero_End",
+			"がまんする": ""
+		}
+	},
+	{
+		"id": 26,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 27,
+		"text": "「オロロロロロロロロロロロロッッ！オエ“ッ！」¥n「ど、どうしたんだ萩原君！？いきなり吐き出して！？」",
+		"selections": []
+	},
+	{
+		"id": 28,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 29,
+		"text": "こうしてオレはバスに迷惑をかけてしまった。¥nどうやらオレはコロナウイルスにかかっていたらしい。¥nこのままオレはアメリカで朽ち果ててしまった。",
+		"selections": []
+	},
+	{
+		"id": 29,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 29,
+		"text": "-ゲロエンド-",
+		"selections": []
+	},
+	{
+		"id": 30,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 31,
+		"text": "「なんとかホテルまで我慢するか…」",
+		"selections": []
+	},
+	{
+		"id": 31,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 32,
+		"text": "ロサンゼルスのホテルに到着。¥nしかしそこでもトラブルがあった。¥nなぜかオレのルームキーが配られなかったのである。",
+		"selections": []
+	},
+	{
+		"id": 32,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 1,
+		"nextId": 35,
+		"text": "",
+		"selections": {
+			"怒る": "abare_End",
+			"がまんする": ""
+		}
+	},
+	{
+		"id": 33,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 34,
+		"text": "「ああああああああああああああああああ！」¥nオレは怒りのあまり手に持っている綾鷹を振り回し暴れた。¥nしかしすぐに屈強な警備員がオレを取り押さえた。",
+		"selections": []
+	},
+	{
+		"id": 34,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 34,
+		"text": "「ばかたれが」心のどこか遠くでそうつぶやく誰かがいた。¥nこうしてオレは強制送還された...¥n-あばれるくんエンド-",
+		"selections": []
+	},
+	{
+		"id": 35,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 0,
+		"text": "「すいません、オレのルームキーないんすけど」¥nそう伝えたオレは後でしっかりルームキーをもらえた。",
+		"selections": []
+	},
+	{
+		"id": 36,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 37,
+		"text": "「ベガス楽しみやな～」¥nオレはベガスに来ていた。¥nこれから大儲けする予定だ。",
+		"selections": []
+	},
+	{
+		"id": 37,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 38,
+		"text": "「どれで儲けよっかなぁ」",
+		"selections": []
+	},
+	{
+		"id": 38,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 1,
+		"nextId": 42,
+		"text": "",
+		"selections": {
+			"ルーレット": "gamble_End",
+			"スロット": "gamble_End",
+			"見るだけでまんぞくや": ""
+		}
+	},
+	{
+		"id": 39,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 0,
+		"nextId": 40,
+		"text": "「あっ！」¥nあまりにも一瞬で金が溶けてしまった。¥nそれだけでなく、多額の借金まで負ってしまった...",
+		"selections": []
+	},
+	{
+		"id": 41,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 41,
+		"text": "こうしてオレはアメリカで借金を返せず、朽ち果ててしまった...¥n-ギャンブルエンド-",
+		"selections": []
+	},
+	{
+		"id": 41,
+		"backgroundImageType": 0,
+		"characterImageType": 0,
+		"type": 3,
+		"nextId": 0,
+		"text": "金は使わなかったが、ラスベガスを満喫できた。",
+		"selections": []
 	}
 ]
