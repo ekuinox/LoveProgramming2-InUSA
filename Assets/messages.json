@@ -9,7 +9,7 @@
 	{
 		"id": 1,
 		"type": 1,
-		"nextId": 2,
+		"nextId": -1,
 		"text": "",
 		"selections": {
 			"シコってねる": "decreaseLoveAll",
