@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour
                     int id = Random.Range(0, 2);
 
                     if (id == 0) MessageText.textId = 42;
-                    else if (id == 1) MessageText.textId = 36;
+                    else if (id == 1) MessageText.textId = 37;
                 }
                 return true;
 
@@ -124,8 +124,8 @@ public class PlayerController : MonoBehaviour
             case EChipType.eBed:
 
                 int id2 = Random.Range(0, 2);
-                if (id2 == 0) MessageText.textId = 62;
-                else if (id2 == 1) MessageText.textId = 63;
+                if (id2 == 0) MessageText.textId = 63;
+                else if (id2 == 1) MessageText.textId = 64;
 
                 return true;
 
