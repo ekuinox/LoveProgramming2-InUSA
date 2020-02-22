@@ -7,7 +7,15 @@ public static class MessageLoader
 {
     public static List<Message> GetFromJson(string json)
     {
-        return JsonConvert.DeserializeObject<List<Message>>(json);
+        try
+        {
+            return JsonConvert.DeserializeObject<List<Message>>(json);
+        }
+        catch (JsonException exception)
+        {
+            Debug.Log($"[MessageLoader#GetFromJson] error {exception.Message}");
+            return new List<Message>();
+        }
     }
 
     public static List<Message> GetFromFile(string filePath)
@@ -18,6 +26,7 @@ public static class MessageLoader
             return GetFromJson(json);
         }
         catch {
+            Debug.Log("[MessageLoader#GetFromFile] error");
             return new List<Message>();
         }
     }
