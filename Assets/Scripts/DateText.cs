@@ -16,5 +16,6 @@ public class DateText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        date.text = Manager.GetPassedDay().ToString();
     }
 }
