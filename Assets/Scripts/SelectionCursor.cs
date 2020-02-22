@@ -10,9 +10,15 @@ public class SelectionCursor : MonoBehaviour
 {
     [SerializeField] private int currentSelected = 0;
     [SerializeField] private int padding = 50;
+    private Vector3 initPosition;
 
-    private int selectionLength = 3;
     private string[] selections;
+
+
+    private void Start()
+    {
+        initPosition = gameObject.transform.position;
+    }
 
     void Update()
     {
@@ -27,7 +33,8 @@ public class SelectionCursor : MonoBehaviour
 
         // clamp
         if (currentSelected < 0) currentSelected = 0;
-        if (currentSelected > selectionLength - 1) currentSelected = selectionLength - 1;
+        if (currentSelected >= selections.Length) currentSelected = selections.Length - 1;
+        gameObject.transform.SetPositionAndRotation(initPosition + new Vector3(0, - padding * currentSelected, 0), Quaternion.identity);
     }
 
     public void clear()
@@ -39,7 +46,7 @@ public class SelectionCursor : MonoBehaviour
     public void setSelections(Message message)
     {
         var n = 0;
-        selections = new string[3];
+        selections = new string[message.selections.Count];
         foreach (var text in message.selections.Keys)
         {
             selections[n++] = text;
