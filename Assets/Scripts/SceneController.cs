@@ -20,14 +20,27 @@ static public class SceneController
     /*------------------------------------------
      * LoadScene  : シーンの読み込み
      * state      : 読み込むシーンステート
+     * 返り値: 読み込んだかどうか
      -------------------------------------------*/
-    static public void LoadScene(ESceneState state)
+    static public bool LoadScene(ESceneState state)
     {
         lastState = currentState;
         currentState = state;
 
         int index = GetSceneIndex(state);
+        if (lastState == ESceneState.eGalGame)
+        {
+            var day = Manager.ForwardDay();
+            // 4日目かつ、textIdが0未満でない場合
+            if (day == 4 && MessageText.textId > 1)
+            {
+                // 23 強制発生
+                MessageText.textId = 23;
+                return false;
+            }
+        }
         SceneManager.LoadScene(index, LoadSceneMode.Single);
+        return true;
     }
 
     ///*------------------------------------------
