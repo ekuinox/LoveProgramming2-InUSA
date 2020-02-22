@@ -19,7 +19,7 @@ public class MessageText : MonoBehaviour
     {
         get
         {
-            return messages[textId];
+            return Manager.messages[textId];
         }
     }
 
