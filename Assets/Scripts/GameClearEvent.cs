@@ -13,6 +13,6 @@ public class GameClearEvent : LoveEvent
 
     public void run(MessageText messageText)
     {
-
+        SceneController.LoadScene(ESceneState.eTitle);
     }
 }

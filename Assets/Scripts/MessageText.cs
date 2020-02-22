@@ -118,6 +118,7 @@ public class MessageText : MonoBehaviour
         else
         {
             // マップに戻る
+            SceneController.LoadScene(SceneController.lastState);
         }
     }
 }
