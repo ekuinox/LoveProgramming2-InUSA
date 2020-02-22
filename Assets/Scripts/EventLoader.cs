@@ -50,6 +50,10 @@ public static class EventLoader
         {
             case "decreaseLove":
                 return typeof(DecreaseLoveEvent);
+            case "gameOver":
+                return typeof(GameOverEvent);
+            case "gameClear":
+                return typeof(GameClearEvent);
         }
         return typeof(DoNothing);
     }
