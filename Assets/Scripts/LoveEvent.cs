@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 public interface LoveEvent
 {
     void init(Dictionary<string, string> args);
-    void run();
+    void run(MessageText messageText);
 }

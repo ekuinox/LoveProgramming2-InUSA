@@ -1,8 +1,22 @@
 {
-	"decreaseLove": {
+	"decreaseLoveAll": {
 		"type": "decreaseLove",
 		"args": {
-			"count": 1
+			"count": 1,
+		}
+	},
+	"decreaseLoveUnity": {
+		"type": "decreaseLove",
+		"args": {
+			"count": 1,
+			"target": 0,
+		}
+	},
+	"decreaseLoveUE4": {
+		"type": "decreaseLove",
+		"args": {
+			"count": 1,
+			"target": 1,
 		}
 	}
 }
