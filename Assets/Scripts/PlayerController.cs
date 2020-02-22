@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EPlayerDirection
+{
+    eLeft,
+    eRight,
+    eUp,
+    eDown
+}
+
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Sprite[] sprites;
@@ -9,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private float offsetX = 0.5f, offsetY = 0.5f;
     private int moveX = 0, moveY = 0;
-
+    private EPlayerDirection direction;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +31,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Down Arrow"))
         {
             Debug.Log("下");
+            direction = EPlayerDirection.eDown;
 
-            if (field.GetNextChipType(moveX, moveY - 1) == EChipType.eNone)
+            if (field.GetNextChipType(moveX, moveY, direction) == EChipType.eNone)
             {
                 moveY--;
             }
@@ -33,7 +42,9 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetButtonDown("Up Arrow"))
         {
             Debug.Log("上");
-            if (field.GetNextChipType(moveX, moveY + 1) == EChipType.eNone)
+            direction = EPlayerDirection.eUp;
+
+            if (field.GetNextChipType(moveX, moveY, direction) == EChipType.eNone)
             {
                 moveY++;
             }
@@ -42,7 +53,9 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetButtonDown("Left Arrow"))
         {
             Debug.Log("左");
-            if (field.GetNextChipType(moveX - 1, moveY) == EChipType.eNone)
+            direction = EPlayerDirection.eLeft;
+
+            if (field.GetNextChipType(moveX, moveY, direction) == EChipType.eNone)
             {
                 moveX--;
             }
@@ -51,7 +64,9 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetButtonDown("Right Arrow"))
         {
             Debug.Log("右");
-            if (field.GetNextChipType(moveX + 1, moveY) == EChipType.eNone)
+            direction = EPlayerDirection.eRight;
+
+            if (field.GetNextChipType(moveX, moveY, direction) == EChipType.eNone)
             {
                 moveX++;
             }
@@ -63,10 +78,30 @@ public class PlayerController : MonoBehaviour
 
 
         // アクションを行う
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetButtonDown("Action") && field.GetNextChipType(moveX, moveY, direction) != EChipType.eNone)
         {
-            // アクションの呼び出し処理
             Debug.Log("アクションをする");
+
+            // 行うイベントのIDを設定
+            if (SetTextID())
+            {
+                SceneController.LoadScene(ESceneState.eGalGame);
+            }
+        }
+    }
+
+    private bool SetTextID()
+    {
+        EChipType type = field.GetNextChipType(moveX, moveY, direction);
+
+        switch (type)
+        {
+            case EChipType.eTissue:
+                MessageText.textId = 1;
+                return true;
+
+            default:
+                return false;
         }
     }
 }

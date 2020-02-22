@@ -13,6 +13,9 @@ public enum ESceneState
 
 static public class SceneController
 {
+    static public ESceneState currentState;
+    static public ESceneState lastState;
+
 
     /*------------------------------------------
      * LoadScene  : シーンの読み込み
@@ -20,19 +23,22 @@ static public class SceneController
      -------------------------------------------*/
     static public void LoadScene(ESceneState state)
     {
+        lastState = currentState;
+        currentState = state;
+
         int index = GetSceneIndex(state);
         SceneManager.LoadScene(index, LoadSceneMode.Single);
     }
 
-    /*------------------------------------------
-     * AttachScene  : シーンのアタッチ
-     * state        : アタッチするシーンステート
-     -------------------------------------------*/
-    static public void AttachScene(ESceneState state)
-    {
-        int index = GetSceneIndex(state);
-        SceneManager.LoadScene(index, LoadSceneMode.Additive);
-    }
+    ///*------------------------------------------
+    // * AttachScene  : シーンのアタッチ
+    // * state        : アタッチするシーンステート
+    // -------------------------------------------*/
+    //static public void AttachScene(ESceneState state)
+    //{
+    //    int index = GetSceneIndex(state);
+    //    SceneManager.LoadScene(index, LoadSceneMode.Additive);
+    //}
 
     /*------------------------------------------
      * GetSceneIndex  : シーンの番号を取得

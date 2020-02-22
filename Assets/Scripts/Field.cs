@@ -54,10 +54,19 @@ public class Field : MonoBehaviour
      * x,y              : 次に移動する座標値
      * 戻り値           : 次のチップのタイプ
      -------------------------------------------*/
-    public EChipType GetNextChipType(int x, int y)
+    public EChipType GetNextChipType(int x, int y, EPlayerDirection direction)
     {
         int type;
-        Tile tile = tileMap.GetTile<Tile>(new Vector3Int(x, y, 0));
+        int indexX = x, indexY = y;
+
+        // プレイヤーの向いている方向から調べる座標値を決定
+        if (direction == EPlayerDirection.eDown) indexY -= 1;
+        else if (direction == EPlayerDirection.eUp) indexY += 1;
+        else if (direction == EPlayerDirection.eLeft) indexX -= 1;
+        else if (direction == EPlayerDirection.eRight) indexX += 1;
+
+        // 指定した座標値に何のチップがあるかを調べる
+        Tile tile = tileMap.GetTile<Tile>(new Vector3Int(indexX, indexY, 0));
         if (tile != null)
         {
             string str = Regex.Replace(tile.sprite.name, @"[^0-9]", "");
