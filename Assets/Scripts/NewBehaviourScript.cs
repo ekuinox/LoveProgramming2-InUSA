@@ -23,7 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             var eventsData = EventLoader.GetFromFile(Application.dataPath + "/events.json");
             var decreaseLove = EventLoader.SpawnEventById("decreaseLove");
-            decreaseLove.run();
+            decreaseLove.run(null);
         }
         
     }
