@@ -13,7 +13,7 @@
 		"backgroundImageType": 1,
 		"characterImageType": 0,
 		"type": 0,
-		"nextId": 1,
+		"nextId": -1,
 		"text": "",
 		"selections": {
 			"シコってねる": "decreaseLoveAll",
