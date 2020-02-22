@@ -12,6 +12,7 @@ public class SelectionCursor : MonoBehaviour
     [SerializeField] private int padding = 50;
 
     private int selectionLength = 3;
+    private string[] selections;
 
     void Update()
     {
@@ -29,8 +30,24 @@ public class SelectionCursor : MonoBehaviour
         if (currentSelected > selectionLength - 1) currentSelected = selectionLength - 1;
     }
 
-    public int getCurrentSelected()
+    public void clear()
     {
-        return currentSelected;
+        currentSelected = 0;
+        selections = new string[] { };
+    }
+
+    public void setSelections(Message message)
+    {
+        var n = 0;
+        selections = new string[3];
+        foreach (var text in message.selections.Keys)
+        {
+            selections[n++] = text;
+        }
+    }
+
+    public string getCurrentSelected()
+    {
+        return selections[currentSelected];
     }
 }
