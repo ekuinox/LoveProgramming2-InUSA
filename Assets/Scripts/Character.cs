@@ -15,8 +15,13 @@ public class Character : MonoBehaviour
 
     public void setTexture(TextureType type)
     {
-        if (type == TextureType.None) return;
+        if (type == TextureType.None)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
 
+        gameObject.SetActive(true);
         GetComponent<RawImage>().texture = textures[(int)type];
     }
 }
