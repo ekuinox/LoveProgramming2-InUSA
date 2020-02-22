@@ -15,6 +15,12 @@ public class MessageText : MonoBehaviour
 
     static private Message[] messages;
 
+    [SerializeField]
+    private Background background;
+
+    [SerializeField]
+    private Character character;
+
     private Message message
     {
         get
@@ -35,47 +41,69 @@ public class MessageText : MonoBehaviour
     {
         var textComponent = gameObject.GetComponent<Text>();
         textComponent.text = "";
-        if (message.type == 1)
+        if (!message.isNormal)
         {
             foreach (var text in message.selections.Keys)
             {
                 textComponent.text += $"{text}\n";
             }
             cursor.setSelections(message);
-            cursor.gameObject.SetActive(true);
+            cursor.setActive(true);
         }
         else
         {
             textComponent.text = message.text;
-            cursor.gameObject.SetActive(false);
+            cursor.setActive(false);
         }
+
+        // 画像セット
+        background.setTexture(message.backgroundImageType);
+        character.setTexture(message.characterImageType);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (message.isNormal)
+            switch (message.type)
             {
-                var nextId = message.nextId;
-                if (nextId < 0)
-                {
-                    // todo マップに戻る
-                    return;
-                }
-
-                textId = nextId;
-                LoadMessage();
-            }
-            else
-            {
-                var selected = cursor.getCurrentSelected();
-                var eventIds = message.selections[selected].Split(',');
-                foreach (var eventId in eventIds)
-                {
-                    var loveEvent = EventLoader.SpawnEventById(eventId);
-                    loveEvent.run(this);
-                }
+                case Message.MessageType.Normal:
+                    Next(message.nextId);
+                    break;
+                case Message.MessageType.Selection:
+                    {
+                        var selected = cursor.getCurrentSelected();
+                        var eventIds = message.selections[selected].Split(',');
+                        var isIgnoredNext = false;
+                        foreach (var eventId in eventIds)
+                        {
+                            var loveEvent = EventLoader.SpawnEventById(eventId);
+                            loveEvent.run(this);
+                            if (loveEvent.GetType() == typeof(ChangeNextMessage))
+                            {
+                                isIgnoredNext = true;
+                            }
+                        }
+                        if (!isIgnoredNext)
+                        {
+                            Next(message.nextId);
+                        }
+                    }
+                    break;
+                case Message.MessageType.GameClear:
+                    {
+                        var gameClearEvent = new GameClearEvent();
+                        gameClearEvent.init(new Dictionary<string, string>());
+                        gameClearEvent.run(this);
+                    }
+                    break;
+                case Message.MessageType.GameOver:
+                    {
+                        var gameOverEvent = new GameOverEvent();
+                        gameOverEvent.init(new Dictionary<string, string>());
+                        gameOverEvent.run(this);
+                    }
+                    break;
             }
         }
     }
@@ -86,6 +114,10 @@ public class MessageText : MonoBehaviour
         {
             textId = index;
             LoadMessage();
+        }
+        else
+        {
+            // マップに戻る
         }
     }
 }
