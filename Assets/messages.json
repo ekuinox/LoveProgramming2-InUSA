@@ -11,7 +11,7 @@
 		"type": 1,
 		"nextId": 2,
 		"text": "",
-		"selection": {
+		"selections": {
 			"シコってねる": "decreaseLoveAll",
 			"シコらない": ""
 		}
