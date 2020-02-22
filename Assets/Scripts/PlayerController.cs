@@ -107,12 +107,26 @@ public class PlayerController : MonoBehaviour
 
             // 出口イベント
             case EChipType.eExit:
-                MessageText.textId = 1;
+                if (SceneController.currentState == ESceneState.eSanFrancisco)
+                {
+                    MessageText.textId = 17;
+                }
+                else if (SceneController.currentState == ESceneState.eLosAngeles)
+                {
+                    int id = Random.Range(0, 1);
+
+                    if (id == 0) MessageText.textId = 42;
+                    else if (id == 1) MessageText.textId = 36;
+                }
                 return true;
 
             // ベッドイベント
             case EChipType.eBed:
-                MessageText.textId = 1;
+
+                int id2 = Random.Range(0, 1);
+                if (id2 == 0) MessageText.textId = 62;
+                else if (id2 == 1) MessageText.textId = 63;
+
                 return true;
 
             default:
@@ -120,3 +134,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
+
+//ロス　42、36
+//サン　17

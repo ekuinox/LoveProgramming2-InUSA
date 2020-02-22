@@ -16,7 +16,7 @@ public class TitleScene : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            MessageText.textId = 1;
+            MessageText.textId = 2;
             SceneController.LoadScene(ESceneState.eGalGame);
         }
     }
