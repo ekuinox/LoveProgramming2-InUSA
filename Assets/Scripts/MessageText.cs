@@ -15,6 +15,9 @@ public class MessageText : MonoBehaviour
 
     static private Message[] messages;
 
+    static private bool isDay4 = false;
+
+
     [SerializeField]
     private Background background;
 
@@ -43,6 +46,7 @@ public class MessageText : MonoBehaviour
 
     void LoadMessage()
     {
+        Debug.Log($"LoadMessage id => {textId}");
         var textComponent = gameObject.GetComponent<Text>();
         textComponent.text = "";
         if (!message.isNormal)
@@ -121,7 +125,21 @@ public class MessageText : MonoBehaviour
         }
         else
         {
-            // マップに戻る
+            // 三日目
+            if (Manager.GetPassedDay() == 3)
+            {
+                Next(23);
+                Manager.ForwardDay();
+                isDay4 = true;
+                return;
+            }
+            if (!isDay4)
+            {
+                Manager.ForwardDay();
+            } else
+            {
+                isDay4 = false;
+            }
             if (!SceneController.LoadScene(SceneController.lastState))
             {
                 // 失敗時
