@@ -32,6 +32,7 @@ public static class Manager
     public static uint ForwardDay()
     {
         passedDays += 1;
+        Debug.Log($"{passedDays}日目になりました");
         return passedDays;
     }
 
