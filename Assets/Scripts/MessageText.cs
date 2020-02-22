@@ -49,7 +49,7 @@ public class MessageText : MonoBehaviour
         Debug.Log($"LoadMessage id => {textId}");
         var textComponent = gameObject.GetComponent<Text>();
         textComponent.text = "";
-        if (!message.isNormal)
+        if (message.type == Message.MessageType.Selection)
         {
             foreach (var text in message.selections.Keys)
             {
