@@ -16,6 +16,7 @@ public static class Manager
         {
             messages = MessageLoader.GetFromFile($"{Application.dataPath}/messages.json").ToArray();
             EventLoader.GetFromFile($"{Application.dataPath}/events.json");
+            isLoaded = true;
         }
     }
    
