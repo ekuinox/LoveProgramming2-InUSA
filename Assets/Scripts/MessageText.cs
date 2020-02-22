@@ -64,8 +64,7 @@ public class MessageText : MonoBehaviour
                     return;
                 }
 
-                textId = nextId;
-                LoadMessage();
+                Next(nextId);
             }
             else
             {
