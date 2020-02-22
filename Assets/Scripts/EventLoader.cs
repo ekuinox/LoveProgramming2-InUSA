@@ -39,7 +39,7 @@ public static class EventLoader
         {
             return eventDataDict[id];
         }
-        Debug.Log("[EventLoader#GetById] Not found id");
+        Debug.Log($"[EventLoader#GetById] Not found id {id}");
         return new EventData();
 
     }
