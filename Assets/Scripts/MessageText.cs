@@ -58,15 +58,24 @@ public class MessageText : MonoBehaviour
             if (message.isNormal)
             {
                 Next(message.nextId);
-                }
+            }
             else
             {
                 var selected = cursor.getCurrentSelected();
                 var eventIds = message.selections[selected].Split(',');
+                var isIgnoredNext = false;
                 foreach (var eventId in eventIds)
                 {
                     var loveEvent = EventLoader.SpawnEventById(eventId);
                     loveEvent.run(this);
+                    if (loveEvent.GetType() == typeof(ChangeNextMessage))
+                    {
+                        isIgnoredNext = true;
+                    }
+                }
+                if (!isIgnoredNext)
+                {
+                    Next(message.nextId);
                 }
             }
         }
