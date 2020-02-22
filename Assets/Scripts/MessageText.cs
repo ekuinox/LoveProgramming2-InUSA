@@ -25,6 +25,10 @@ public class MessageText : MonoBehaviour
     {
         get
         {
+            if (Manager.messages.Length <= textId)
+            {
+                Debug.Log($"messages index error textId => {textId}");
+            }
             return Manager.messages[textId];
         }
     }
