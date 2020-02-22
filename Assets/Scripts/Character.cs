@@ -7,7 +7,9 @@ public class Character : MonoBehaviour
 {
     public enum TextureType
     {
-        None = 0
+        None = 0,
+        Unity = 1,
+        UE4 = 2
     }
 
     [SerializeField]
