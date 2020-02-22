@@ -128,7 +128,7 @@ public class MessageText : MonoBehaviour
             // 三日目
             if (Manager.GetPassedDay() == 3)
             {
-                Next(23);
+                Next(25);
                 SceneController.lastState = ESceneState.eLosAngeles;
                 Manager.ForwardDay();
                 isDay4 = true;
