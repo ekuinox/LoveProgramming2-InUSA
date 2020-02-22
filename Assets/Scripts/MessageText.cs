@@ -42,10 +42,12 @@ public class MessageText : MonoBehaviour
                 textComponent.text += $"{text}\n";
             }
             cursor.setSelections(message);
+            cursor.gameObject.SetActive(true);
         }
         else
         {
             textComponent.text = message.text;
+            cursor.gameObject.SetActive(false);
         }
     }
 
