@@ -178,7 +178,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7719571962041242032, guid: bd2e92fcbe779654491032af7eb5ccac,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -199,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109427216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -1.5, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0.5, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -222,6 +222,7 @@ MonoBehaviour:
   - {fileID: -4683471652171598076, guid: bd2e92fcbe779654491032af7eb5ccac, type: 3}
   - {fileID: -1502861823439717168, guid: bd2e92fcbe779654491032af7eb5ccac, type: 3}
   - {fileID: -4516433522762295259, guid: bd2e92fcbe779654491032af7eb5ccac, type: 3}
+  field: {fileID: 1699369158}
 --- !u!95 &109427220
 Animator:
   serializedVersion: 3
@@ -3006,7 +3007,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3030,7 +3031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021015779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.7, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3092,6 +3093,7 @@ GameObject:
   - component: {fileID: 1699369155}
   - component: {fileID: 1699369157}
   - component: {fileID: 1699369156}
+  - component: {fileID: 1699369158}
   m_Layer: 0
   m_Name: Furniture Tilemap
   m_TagString: Untagged
@@ -4658,3 +4660,15 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1699369158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699369154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352f7f03eb154fb4db81d81c4814ce1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
