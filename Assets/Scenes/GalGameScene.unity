@@ -249,7 +249,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -260,7 +260,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u541B\u3082\u3046\u5C31\u30D7\u30EC\u51FA\u308B\u306A\u3063...\uFF01"
+  m_Text: "\u541B\u3082\u3046\u5C31\u30D7\u30EC\u51FA\u308B\u306A\u3063...\uFF01\n\u541B\u3082\u3046\u5C31\u30D7\u30EC\u51FA\u308B\u306A\u3063...\uFF01\n\u541B\u3082\u3046\u5C31\u30D7\u30EC\u51FA\u308B\u306A\u3063...\uFF01"
 --- !u!222 &331090476
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSelected: 0
-  padding: 100
+  padding: 50
 --- !u!114 &1254882804
 MonoBehaviour:
   m_ObjectHideFlags: 0
