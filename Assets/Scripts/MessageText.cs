@@ -51,7 +51,7 @@ public class MessageText : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             if (message.isNormal)
             {
