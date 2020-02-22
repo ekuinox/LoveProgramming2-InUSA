@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else if (SceneController.currentState == ESceneState.eLosAngeles)
                 {
-                    int id = Random.Range(0, 1);
+                    int id = Random.Range(0, 2);
 
                     if (id == 0) MessageText.textId = 42;
                     else if (id == 1) MessageText.textId = 36;
@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
             // ベッドイベント
             case EChipType.eBed:
 
-                int id2 = Random.Range(0, 1);
+                int id2 = Random.Range(0, 2);
                 if (id2 == 0) MessageText.textId = 62;
                 else if (id2 == 1) MessageText.textId = 63;
 
